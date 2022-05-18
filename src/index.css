@@ -13,7 +13,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #585858;
-  background-color: hsl(235deg 100% 93% / 50%);
+  background-color: rgba(189, 189, 189, 0.5);
 }
 
 ul {
@@ -25,4 +25,62 @@ ul {
   width: 100%;
   margin: 10em auto;
   padding: 0 20px;
+}
+
+.file-upload {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7em 0;
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+  gap: 1.5em;
+  background-color:hsl(235deg 100% 99%);
+  box-shadow: rgba(107, 109, 120, 0.132) 0 25px 50px -12px;
+  border-radius: 7px;
+}
+
+.file-upload input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.file-upload .icon {
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.file-upload .icon ion-icon {
+  font-size: 4em;
+  color: rgba(255, 234, 234, 0.9);
+  z-index: 1;
+  position: relative;
+}
+
+.file-upload .icon::before, .file-upload .icon::after {
+  content: '';
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 221, 143, 0.85);
+  background-color: hsla(235, 100%, 99%, 1);
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.file-upload .icon::after {
+  border:0;
+  transform: scale(2.5);
+  z-index: 0;
+  background-color: rgba(255, 221, 143, 0.85);
 }
