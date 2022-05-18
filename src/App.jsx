@@ -20,7 +20,7 @@ function App() {
           </div>
           <div className="list-upload">
             <ul>
-              <li className="file-list">
+              <li className="file-list image">
                 <div className="thumbnail">
                   <ion-icon name="document-outline"></ion-icon>
                   <ion-icon name="image-outline"></ion-icon>
@@ -32,12 +32,37 @@ function App() {
                 </div>
                 <div className="properties">
                   <span className="title">
-                    <strong></strong>
+                    <strong>IMG10522.png</strong>
                   </span>
-                  <span className="size"></span>
+                  <span className="size">22.7 kb</span>
                   <span className="progress">
                     <span className="buffer"></span>
-                    <span className="percentage">0%</span>
+                    <span className="percentage">10%</span>
+                  </span>
+                </div>
+                <button className="remove">
+                  <ion-icon name="close"></ion-icon>
+                </button>
+              </li>
+
+              <li className="file-list audio">
+                <div className="thumbnail">
+                  <ion-icon name="document-outline"></ion-icon>
+                  <ion-icon name="image-outline"></ion-icon>
+                  <ion-icon name="musical-notes-outline"></ion-icon>
+                  <ion-icon name="videocam-outline"></ion-icon>
+                  <span className="completed">
+                    <ion-icon name="checkmark"></ion-icon>
+                  </span>
+                </div>
+                <div className="properties">
+                  <span className="title">
+                    <strong>hello-world.wav</strong>
+                  </span>
+                  <span className="size">1146.3 kb</span>
+                  <span className="progress">
+                    <span className="buffer"></span>
+                    <span className="percentage">10%</span>
                   </span>
                 </div>
                 <button className="remove">
